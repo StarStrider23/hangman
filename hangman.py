@@ -111,7 +111,7 @@ class Hangman:
                 if name == self.letter:
                     self.hint[index] = self.letter
                     if self.hint == list(self.word):
-                        print('Congratulations, you won!')
+                        print(f'Congratulations, you won! The word was "{self.word}".')
                         self.end_game()
 
     #The method that ends the game and inquires whether the player wants to play again
