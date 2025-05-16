@@ -128,6 +128,7 @@ class Hangman:
             self.end_game()
 
 if __name__ == '__main__':
-    word_list = open('words.txt').read().split()
+    with open('words.txt', 'r') as file:
+        word_list = file.read().split()
     word = random.choice(word_list)
     Hangman(word).start_game()
